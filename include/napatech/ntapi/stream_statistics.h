@@ -108,7 +108,7 @@
  * it must be mutex protected in the application.
  *
  */
-#include "/mnt/1/1/napatech/ntapi/commontypes.h"
+#include "/mnt/1/1/include/napatech/ntapi/commontypes.h"
 
 /**
  * Possible statistics read commands

@@ -3,7 +3,7 @@
 #include </mnt/1/1/include/prometheus/gauge.h>
 #include </mnt/1/1/include/prometheus/save_to_file.h>
 #include </mnt/1/1/include/prometheus/gateway.h>
-#include "/mnt/1/1/napatech/nt.h"
+#include "/mnt/1/1/include/napatech/nt.h"
 
 #include <array>
 #include <chrono>

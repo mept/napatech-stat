@@ -51,19 +51,19 @@
 extern "C" {
 #endif
 
-#include "/mnt/1/1/napatech/ntapi/commontypes.h"
-#include "/mnt/1/1/napatech/ntapi/errorcodes.h"
-#include "/mnt/1/1/napatech/ntapi/pktdescr.h"
-#include "/mnt/1/1/napatech/ntapi/stream_statistics.h"
-#include "/mnt/1/1/napatech/ntapi/stream_config.h"
-#include "/mnt/1/1/napatech/ntapi/stream_event.h"
-#include "/mnt/1/1/napatech/ntapi/stream_net.h"
-#include "/mnt/1/1/napatech/ntapi/stream_info.h"
-#include "/mnt/1/1/napatech/ntapi/stream_flow.h"
-#include "/mnt/1/1/napatech/ntapi/version.h"
-#include "/mnt/1/1/napatech/ntapi/ntapi.h"
+#include "/mnt/1/1/include/napatech/ntapi/commontypes.h"
+#include "/mnt/1/1/include/napatech/ntapi/errorcodes.h"
+#include "/mnt/1/1/include/napatech/ntapi/pktdescr.h"
+#include "/mnt/1/1/include/napatech/ntapi/stream_statistics.h"
+#include "/mnt/1/1/include/napatech/ntapi/stream_config.h"
+#include "/mnt/1/1/include/napatech/ntapi/stream_event.h"
+#include "/mnt/1/1/include/napatech/ntapi/stream_net.h"
+#include "/mnt/1/1/include/napatech/ntapi/stream_info.h"
+#include "/mnt/1/1/include/napatech/ntapi/stream_flow.h"
+#include "/mnt/1/1/include/napatech/ntapi/version.h"
+#include "/mnt/1/1/include/napatech/ntapi/ntapi.h"
 
-#include "/mnt/1/1/napatech/ntapi/deprecated/pktdescr_deprecated.h"
+#include "/mnt/1/1/include/napatech/ntapi/deprecated/pktdescr_deprecated.h"
 
 #ifdef __cplusplus
 }

@@ -41,7 +41,7 @@
 #ifndef __PKT_DESCR_DEPRECATED_H__
 #define __PKT_DESCR_DEPRECATED_H__
 
-#include "/mnt/1/1/napatech/ntapi/pktdescr.h"
+#include "/mnt/1/1/include/napatech/ntapi/pktdescr.h"
 
 //
 // Internal macros to create compiler messages and warnings
