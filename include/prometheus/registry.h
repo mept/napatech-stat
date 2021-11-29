@@ -6,8 +6,8 @@
 #include <string>
 #include <vector>
 
-#include "/mnt/1/1/include/prometheus/collectable.h"
-#include "/mnt/1/1/include/prometheus/family.h"
+#include "prometheus/collectable.h"
+#include "prometheus/family.h"
 
 namespace prometheus {
 

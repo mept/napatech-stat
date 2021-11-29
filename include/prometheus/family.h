@@ -9,9 +9,9 @@
 #include <vector>
 #include <cassert>
 
-#include "/mnt/1/1/include/prometheus/collectable.h"
-#include "/mnt/1/1/include/prometheus/metric.h"
-#include "/mnt/1/1/include/prometheus/hash.h"
+#include "prometheus/collectable.h"
+#include "prometheus/metric.h"
+#include "prometheus/hash.h"
 
 namespace prometheus {
 
@@ -156,7 +156,7 @@ namespace prometheus {
       ///     http_requests_total{job= "prometheus"}
       ///
       /// For further information see: [Quering Basics]
-      /// (https://prometheus.io/docs//mnt/1/1/include/prometheus/latest/querying/basics/)
+      /// (https://prometheus.io/docs/prometheus/latest/querying/basics/)
       ///
       /// \param name Set the metric name.
       /// \param help Set an additional description.
