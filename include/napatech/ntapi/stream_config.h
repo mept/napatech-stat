@@ -84,7 +84,7 @@
  *  it must be mutex protected in the application.
  *
  */
-#include "/mnt/1/1/include/napatech/ntapi/commontypes.h"
+#include "napatech/ntapi/commontypes.h"
 
 /**
  * Configuration parameters

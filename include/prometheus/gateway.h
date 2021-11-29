@@ -1,10 +1,10 @@
 #pragma once
 
-#include "/mnt/1/1/include/prometheus/collectable.h"
-#include "/mnt/1/1/include/prometheus/text_serializer.h"
-#include "/mnt/1/1/include/prometheus/metric_family.h"
+#include "prometheus/collectable.h"
+#include "prometheus/text_serializer.h"
+#include "prometheus/metric_family.h"
 
-#include </mnt/1/1/include/jdl/httpclientlite.h>
+#include <jdl/httpclientlite.h>
 
 #include <memory>
 #include <mutex>

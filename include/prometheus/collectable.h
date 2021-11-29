@@ -2,7 +2,7 @@
 
 #include <vector>
 
-#include "/mnt/1/1/include/prometheus/metric_family.h"
+#include "prometheus/metric_family.h"
 
 namespace prometheus {
 

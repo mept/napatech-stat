@@ -1,10 +1,10 @@
 #pragma once
 
-#include "/mnt/1/1/include/prometheus/atomic_floating.h"
-#include "/mnt/1/1/include/prometheus/metric.h"
-#include "/mnt/1/1/include/prometheus/family.h"
+#include "prometheus/atomic_floating.h"
+#include "prometheus/metric.h"
+#include "prometheus/family.h"
 
-#include "/mnt/1/1/include/prometheus/builder.h"
+#include "prometheus/builder.h"
 
 #include <atomic>
 #include <ctime>
