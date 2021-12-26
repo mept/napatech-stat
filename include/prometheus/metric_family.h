@@ -3,16 +3,16 @@
 #include <string>
 #include <vector>
 
-#include "metric.h"
 #include "prometheus/client_metric.h"
+#include "prometheus/detail/core_export.h"
+#include "prometheus/metric_type.h"
 
 namespace prometheus {
 
-  struct MetricFamily {
-    Metric::Type              type;
-    std::string               name;
-    std::string               help;
-    std::vector<ClientMetric> metric;
-  };
-
+struct PROMETHEUS_CPP_CORE_EXPORT MetricFamily {
+  std::string name;
+  std::string help;
+  MetricType type = MetricType::Untyped;
+  std::vector<ClientMetric> metric;
+};
 }  // namespace prometheus
