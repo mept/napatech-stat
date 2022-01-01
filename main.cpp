@@ -12,6 +12,7 @@
 #include <string>
 #include <thread>
 #include <iostream>
+#include <signal.h>
 
 #if defined(__linux__) || defined(__FreeBSD__)
 #include <unistd.h> // sleep()
@@ -21,6 +22,25 @@
 
 using namespace prometheus;
 using namespace std;
+
+struct Data_ {
+    volatile sig_atomic_t stop_flag = 0;
+
+    Data_() noexcept {
+        struct sigaction act = {};
+        act.sa_handler = sigproc_;
+        sigaction(SIGINT,  &act, 0);
+        sigaction(SIGTERM, &act, 0);
+        sigaction(SIGQUIT, &act, 0);
+    }
+};
+
+static Data_ data_;
+
+static void sigproc_(int) noexcept {
+    cout << "Stop signal caught, stoppin..." << endl;
+    data_.stop_flag = 1;
+}
 
 int main(int argc, char* argv[])
 {
@@ -88,7 +108,7 @@ int main(int argc, char* argv[])
     hStat.u.query_v3.poll = 1;  // The the current counters
     hStat.u.query_v3.clear = 0; // Do not clear statistics
 
-    for (;;)
+    while (data_.stop_flag != 1)
     {
         if ((status = NT_StatRead(hStatStream, &hStat)) != NT_SUCCESS)
         {
